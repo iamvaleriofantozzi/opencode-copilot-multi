@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "accounts": [
+    {
+      "username": "giocampeti",
+      "displayName": "giocampeti",
+      "auth": {
+        "type": "oauth",
+        "access": "gho_TUO_ACCESS_TOKEN",
+        "refresh": "ghr_TUO_REFRESH_TOKEN",
+        "expires": 0
+      },
+      "models": [
+        "claude-sonnet-4",
+        "claude-sonnet-4.5",
+        "claude-haiku-4.5",
+        "claude-opus-4",
+        "claude-opus-4.5",
+        "gpt-4o",
+        "gpt-4o-mini",
+        "gpt-4-turbo",
+        "gpt-5",
+        "o1",
+        "o1-mini",
+        "o3-mini",
+        "gemini-2.5-pro",
+        "gemini-3-flash-preview",
+        "gemini-3-pro-preview"
+      ]
+    },
+    {
+      "username": "VF004_rina",
+      "displayName": "VF004_rina",
+      "auth": {
+        "type": "oauth",
+        "access": "gho_TUO_ACCESS_TOKEN_2",
+        "refresh": "ghr_TUO_REFRESH_TOKEN_2",
+        "expires": 0
+      },
+      "models": [
+        "claude-sonnet-4",
+        "claude-sonnet-4.5",
+        "claude-haiku-4.5",
+        "claude-opus-4",
+        "claude-opus-4.5",
+        "gpt-4o",
+        "gpt-4o-mini",
+        "gpt-4-turbo",
+        "gpt-5",
+        "o1",
+        "o1-mini",
+        "o3-mini",
+        "gemini-2.5-pro",
+        "gemini-3-flash-preview",
+        "gemini-3-pro-preview"
+      ]
+    }
+  ]
+}

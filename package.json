@@ -1,57 +1,12 @@
 {
-  "name": "opencode-copilot-multi",
-  "version": "1.0.10",
-  "description": "OpenCode plugin for using multiple GitHub Copilot accounts simultaneously",
-  "keywords": [
-    "opencode",
-    "plugin",
-    "github",
-    "copilot",
-    "multi-account"
-  ],
-  "homepage": "https://github.com/iamvaleriofantozzi/opencode-copilot-multi#readme",
-  "bugs": {
-    "url": "https://github.com/iamvaleriofantozzi/opencode-copilot-multi/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamvaleriofantozzi/opencode-copilot-multi.git"
-  },
-  "license": "MIT",
-  "author": "Valerio Fantozzi",
+  "name": "opencode-copilot-multi-proxy",
+  "version": "1.0.0",
+  "description": "HTTP proxy for OpenCode multi-account GitHub Copilot routing",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "bin": {
-    "opencode-copilot-multi": "bin/cli.js"
-  },
-  "directories": {
-    "example": "example"
-  },
-  "files": [
-    "dist",
-    "bin/cli.js",
-    "scripts/postinstall.js",
-    "README.md"
-  ],
+  "main": "server.js",
   "scripts": {
-    "build": "tsc && tsc --project tsconfig.cli.json",
-    "watch": "tsc --watch",
-    "clean": "rm -rf dist bin/*.js",
-    "prepublishOnly": "npm run build",
-    "postinstall": "node scripts/postinstall.js"
-  },
-  "dependencies": {
-    "undici-types": "^6.21.0",
-    "zod": "^4.1.8"
-  },
-  "devDependencies": {
-    "@opencode-ai/plugin": "^1.1.35",
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0"
-  },
-  "peerDependencies": {
-    "@opencode-ai/plugin": "*"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "engines": {
     "node": ">=18.0.0"
